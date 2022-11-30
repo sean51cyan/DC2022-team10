@@ -97,7 +97,8 @@ public class HomeFragment extends Fragment {
                 String[] day_name = {"月", "火", "水", "木", "金", "土"};
                 if (i == -1) {
                     tv1.setText(day_name[j]);
-                    tv1.setBackgroundColor(Color.parseColor("#a260bf"));
+                    //a260bf
+                    tv1.setBackgroundColor(Color.parseColor("#f0f0f0"));
                     tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, smallTextSize);
                 } else {
                     tv1.setHeight(200);

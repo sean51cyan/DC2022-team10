@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title_array">
+        <item>未登録</item>
+        <item>情報理論</item>
+        <item>アルゴリズム</item>
+        <item>論理と計算</item>
+    </string-array>
+</resources>

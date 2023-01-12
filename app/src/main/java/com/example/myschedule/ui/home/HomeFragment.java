@@ -18,7 +18,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myschedule.ClassEditDialogFragment;
-import com.example.myschedule.R;
 import com.example.myschedule.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -98,7 +97,7 @@ public class HomeFragment extends Fragment {
                 if (i == -1) {
                     tv1.setText(day_name[j]);
                     //a260bf
-                    tv1.setBackgroundColor(Color.parseColor("#f0f0f0"));
+                    tv1.setBackgroundColor(Color.parseColor("#a260bf"));
                     tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, smallTextSize);
                 } else {
                     tv1.setHeight(200);

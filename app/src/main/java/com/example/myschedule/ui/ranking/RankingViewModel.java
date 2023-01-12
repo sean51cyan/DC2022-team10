@@ -1,19 +1,19 @@
-package com.example.myschedule.ui.notifications;
+package com.example.myschedule.ui.ranking;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
-
+public class RankingViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public RankingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is ranking fragment");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
 }
+

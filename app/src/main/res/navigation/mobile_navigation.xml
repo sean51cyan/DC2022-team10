@@ -22,4 +22,11 @@
         android:name="com.example.myschedule.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_rankings"
+        android:name="com.example.myschedule.ui.ranking.RankingFragment"
+        android:label="@string/title_rankings"
+        tools:layout="@layout/fragment_ranking" />
+
 </navigation>

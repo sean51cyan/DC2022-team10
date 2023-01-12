@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">MySchedule</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Comment</string>
+    <string name="title_notifications">Read</string>
+    <string name="title_rankings"> Ranking </string>
+    <string name="insert">insert</string>
+    <string name="read">read</string>
+    <!--ここからRatingBar-->
+    <string name="textDiff">難易度</string>
+    <string name="ratingbarDiff">ratingbar</string>
+    <string name="textEasy">わかりやすさ</string>
+    <string name="ratingbarEasy">ratingbar</string>
+    <string name="textGet">取得率</string>
+    <string name="ratingbarGet">ratingbar</string>
+    <string name="textPro">教授</string>
+    <string name="ratingbarPro">ratingbar</string>
+    <string name="textMood">雰囲気</string>
+    <string name="ratingbarMood">ratingbar</string>
 </resources>

@@ -2,7 +2,6 @@ package com.example.myschedule;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -28,9 +27,9 @@ public class ClassEditDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         String[] day_name = {"月","火","水","木","金","土"};
-        String[] choices = {"未選択","数学","理科","英語","国語","社会"};
+        String[] choices = getResources().getStringArray(R.array.title_array);
         int initial_select = 0;
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < choices.length; i++){
             if(choices[i].equals(homeViewModel.getClassName(this.i,this.j).getValue())){
                 initial_select = i;
             }
@@ -40,9 +39,7 @@ public class ClassEditDialogFragment extends DialogFragment {
         builder.setTitle(time_name)
                 .setPositiveButton("登録", (dialogInterface, id) -> {
                 })
-                .setSingleChoiceItems(choices,initial_select, (dialogInterface, which) -> {
-                    homeViewModel.setClassName(i,j,choices[which]);
-                });
+                .setSingleChoiceItems(choices,initial_select, (dialogInterface, which) -> homeViewModel.setClassName(i,j,choices[which]));
         return builder.create();
     }
 }

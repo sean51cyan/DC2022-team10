@@ -8,10 +8,10 @@ import android.util.Log;
 public class TestOpenHelper extends SQLiteOpenHelper {
 
     // データーベースのバージョン
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 1;
 
     // データーベース名
-    private static final String DATABASE_NAME = "commentDB.db";
+    private static final String DATABASE_NAME = "ReviewDB.db";
     private static final String TABLE_NAME = "comment";
     private static final String _ID = "_id";
     private static final String COLUMN_NAME_TITLE = "title";
@@ -20,6 +20,7 @@ public class TestOpenHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NAME_get = "get";
     private static final String COLUMN_NAME_pro = "pro";
     private static final String COLUMN_NAME_mood = "mood";
+    private static final String COLUMN_NAME_review = "review";
 
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + TABLE_NAME + " (" +
@@ -29,7 +30,8 @@ public class TestOpenHelper extends SQLiteOpenHelper {
                     COLUMN_NAME_easy + " INTEGER," +
                     COLUMN_NAME_get + " INTEGER," +
                     COLUMN_NAME_pro + " INTEGER," +
-                    COLUMN_NAME_mood + " INTEGER)";
+                    COLUMN_NAME_mood + " INTEGER," +
+                    COLUMN_NAME_review + " TEXT)";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + TABLE_NAME;

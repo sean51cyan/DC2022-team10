@@ -12,12 +12,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myschedule.R;
 import com.example.myschedule.TestOpenHelper;
 import com.example.myschedule.databinding.FragmentNotificationsBinding;
-
 
 
 public class NotificationsFragment extends Fragment {
@@ -55,7 +53,7 @@ public class NotificationsFragment extends Fragment {
 
         Cursor cursor = db.query(
                 "comment",
-                new String[]{"title", "diff", "easy", "get", "pro", "mood"},
+                new String[]{"title", "diff", "easy", "get", "pro", "mood", "review"},
                 null,
                 null,
                 null,
@@ -69,6 +67,8 @@ public class NotificationsFragment extends Fragment {
 
         for (int i = 0; i < cursor.getCount(); i++) {
             sbuilder.append(cursor.getString(0));
+            sbuilder.append(":\t");
+            sbuilder.append(cursor.getString(6));
             sbuilder.append("\n");
             cursor.moveToNext();
         }

@@ -94,15 +94,16 @@ public class DashboardFragment extends Fragment {
             int get = (int) ratingBarGet.getRating();
             int pro = (int) ratingBarPro.getRating();
             int mood = (int) ratingBarMood.getRating();
+            String review = "This is review";
 
             // 価格は整数を想定
-            insertData(db, title, diff, easy, get, pro, mood);
+            insertData(db, title, diff, easy, get, pro, mood, review);
         });
 
         return root;
     }
 
-    private void insertData(SQLiteDatabase db, String title, int diff, int easy, int get, int pro, int mood) {
+    private void insertData(SQLiteDatabase db, String title, int diff, int easy, int get, int pro, int mood, String review) {
 
         ContentValues values = new ContentValues();
         values.put("title", title);
@@ -111,6 +112,7 @@ public class DashboardFragment extends Fragment {
         values.put("get", get);
         values.put("pro", pro);
         values.put("mood", mood);
+        values.put("review", review);
 
         db.insert("comment", null, values);
     }

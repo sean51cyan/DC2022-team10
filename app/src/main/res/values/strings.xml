@@ -17,4 +17,5 @@
     <string name="ratingbarPro">ratingbar</string>
     <string name="textMood">雰囲気</string>
     <string name="ratingbarMood">ratingbar</string>
+    <string name="reviewInput">レビュー</string>
 </resources>

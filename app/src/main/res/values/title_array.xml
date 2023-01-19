@@ -7,5 +7,10 @@
         <item>論理と計算</item>
         <item>情報理論2</item>
         <item>コンピューティング2</item>
+        <item>発展プログラミング</item>
+        <item>幾何学</item>
+        <item>デジタルコンテンツ/デジタルコンテンツ2</item>
+        <item>データベース/知識情報処理</item>
+        <itme>暗号理論</itme>
     </string-array>
 </resources>

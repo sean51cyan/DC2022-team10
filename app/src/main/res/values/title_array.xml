@@ -2,13 +2,12 @@
 <resources>
     <string-array name="title_array">
         <item>未登録</item>
-        <item>情報理論</item>
         <item>アルゴリズム</item>
-        <item>論理と計算</item>
-        <item>情報理論2</item>
         <item>コンピューティング2</item>
         <item>発展プログラミング</item>
         <item>幾何学</item>
+        <item>論理と計算</item>
+        <item>情報理論2</item>
         <item>デジタルコンテンツ/デジタルコンテンツ2</item>
         <item>データベース/知識情報処理</item>
         <itme>暗号理論</itme>

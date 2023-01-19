@@ -23,9 +23,9 @@
         android:id="@+id/button_insert"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="148dp"
+        android:layout_marginStart="148dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="136dp"
         android:text="@string/insert"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.198" />
 
     <RatingBar
         android:id="@+id/ratingbarDiff"
@@ -53,12 +53,12 @@
         android:numStars="5"
         android:rating="0"
         android:stepSize="1"
-        app:layout_constraintBottom_toTopOf="@+id/textviewPro"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
+        app:layout_constraintVertical_bias="0.237" />
 
     <TextView
         android:id="@+id/textviewEasy"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <RatingBar
         android:id="@+id/ratingbarEasy"
@@ -85,7 +85,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/textviewGet"
@@ -97,7 +97,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <RatingBar
         android:id="@+id/ratingbarGet"
@@ -113,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.461" />
 
     <TextView
         android:id="@+id/textviewPro"
@@ -125,7 +125,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <RatingBar
         android:id="@+id/ratingbarPro"
@@ -136,12 +136,12 @@
         android:numStars="5"
         android:rating="0"
         android:stepSize="1"
-        app:layout_constraintBottom_toTopOf="@+id/button_insert"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924" />
+        app:layout_constraintVertical_bias="0.572" />
 
     <TextView
         android:id="@+id/textviewMood"
@@ -153,7 +153,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <RatingBar
         android:id="@+id/ratingbarMood"
@@ -169,7 +169,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.685" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"
@@ -188,14 +188,13 @@
         android:layout_width="411dp"
         android:layout_height="66dp"
         android:layout_marginBottom="16dp"
-        android:hint="hint"
+        android:hint="@string/reviewInput"
         app:layout_constraintBottom_toTopOf="@+id/textviewDiff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.921" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

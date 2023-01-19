@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.RatingBar;
 
@@ -34,6 +35,7 @@ public class DashboardFragment extends Fragment {
     private RatingBar ratingBarPro;
     private RatingBar ratingBarMood;
     private SQLiteDatabase db;
+    private EditText reviewInp;
     private View root;
 
 
@@ -54,7 +56,6 @@ public class DashboardFragment extends Fragment {
                 (android.R.layout.simple_spinner_dropdown_item);
 
         spinner.setAdapter(adapter);
-
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
             //　アイテムが選択された時
             @Override
@@ -67,6 +68,8 @@ public class DashboardFragment extends Fragment {
                 //
             }
         });
+
+        reviewInp = root.findViewById(R.id.textInputEditText);
 
         ratingBarDiff = root.findViewById(R.id.ratingbarDiff);
         ratingBarEasy = root.findViewById(R.id.ratingbarEasy);
@@ -94,7 +97,8 @@ public class DashboardFragment extends Fragment {
             int get = (int) ratingBarGet.getRating();
             int pro = (int) ratingBarPro.getRating();
             int mood = (int) ratingBarMood.getRating();
-            String review = "This is review";
+            //String review = "This is review";
+            String review = reviewInp.getText().toString();
 
             // 価格は整数を想定
             insertData(db, title, diff, easy, get, pro, mood, review);
